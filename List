@@ -1,0 +1,17 @@
+void main (){
+
+
+  int foundAt = linearsearch([1,2,5,8,9,6,44,88,41,14,52,36,525],41);
+  print('foundAt: $foundAt');
+}
+
+int linearsearch(List<int> nums,int target){
+  int n = nums.length;
+  for (int i = 0; i < n; i++){
+    if (nums[i] == target){
+      return i;
+
+    }
+  }
+  return -1;
+}
