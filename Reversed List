@@ -1,0 +1,16 @@
+void main (){
+
+  
+  List<int> list = [1,2,5,8,9,6,44,88,41,14,52,36,525];
+  List<int> reversed = reverseList(list);
+  print('Reversed list : $reversed');
+}
+
+List<int> reverseList (List<int> list){
+  List<int> reversed = [];
+  int n = list.length;
+  for (int i = n - 1 ; i >= 0 ; i--){
+    reversed.add(list[i]);
+  }
+  return reversed;
+}
