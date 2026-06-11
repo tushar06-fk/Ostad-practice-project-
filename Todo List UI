@@ -1,0 +1,14 @@
+Expanded(
+  child: ListView.builder(
+    itemCount: 20,
+    itemBuilder: (context, index) {
+      return ListTile(
+        leading: Checkbox(
+          value: false,
+          onChanged: (_) {},
+        ),
+        title: Text('Task-$index'),
+      );
+    },
+  ),
+)
